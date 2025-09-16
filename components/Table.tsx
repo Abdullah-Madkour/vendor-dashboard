@@ -1860,11 +1860,9 @@ export const columns: ColumnDef<Vendor>[] = [
     accessorKey: "subCategories",
     header: "Subcategories",
     cell: ({ row }) => {
-      console.log(row.getValue("subCategories"));
-
       return (
         <div className="capitalize flex items-center gap-2 flex-wrap">
-          {row.getValue("subCategories").map((item) => item)}
+          {row.original.subCategories.map((item) => item)}
         </div>
       );
     },
@@ -1883,7 +1881,7 @@ export const columns: ColumnDef<Vendor>[] = [
         }
         return "bg-red-500";
       };
-      const value = row.getValue("status");
+      const value = row.original.status;
       return (
         <div className="capitalize text-center">
           <EditRecordModal value={value} />

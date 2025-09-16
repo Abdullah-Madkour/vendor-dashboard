@@ -1055,7 +1055,7 @@ const VendorForm = () => {
                     <div className="w-full flex items-start gap-4 *:flex-1">
                       <FormField
                         control={form.control}
-                        name={`fmethod${String(index + 1)}`}
+                        name={`fmethod${String(index + 1)}` as any}
                         render={({ field }) => (
                           <FormItem>
                             {index === 0 ? (
@@ -1084,7 +1084,7 @@ const VendorForm = () => {
                       />
                       <FormField
                         control={form.control}
-                        name={`fdate${String(index + 1)}`}
+                        name={`fdate${String(index + 1)}` as any}
                         render={({ field }) => (
                           <FormItem className="flex flex-col">
                             {index === 0 ? <FormLabel> Date</FormLabel> : null}
@@ -1129,7 +1129,7 @@ const VendorForm = () => {
                       />
                       <FormField
                         control={form.control}
-                        name={`fNotes${String(index + 1)}`}
+                        name={`fNotes${String(index + 1)}` as any}
                         render={({ field }) => (
                           <FormItem className="flex-4!">
                             {index === 0 ? <FormLabel> Notes</FormLabel> : null}
