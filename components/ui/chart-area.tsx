@@ -30,17 +30,6 @@ import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 export const description = "An interactive area chart";
 
 const chartData = [
-  { date: "2024-01-31", orderGroup: 0 },
-  { date: "2024-02-29", orderGroup: 0 },
-  { date: "2024-03-31", orderGroup: 0 },
-  { date: "2024-04-30", orderGroup: 0 },
-  { date: "2024-05-31", orderGroup: 0 },
-  { date: "2024-06-30", orderGroup: 0 },
-  { date: "2024-07-31", orderGroup: 0 },
-  { date: "2024-08-31", orderGroup: 0 },
-  { date: "2024-09-30", orderGroup: 0 },
-  { date: "2024-10-31", orderGroup: 0 },
-  { date: "2024-11-30", orderGroup: 0 },
   { date: "2024-12-31", orderGroup: 9 },
   { date: "2025-01-31", orderGroup: 5 },
   { date: "2025-02-28", orderGroup: 18 },
@@ -51,6 +40,7 @@ const chartData = [
   { date: "2025-07-31", orderGroup: 23 },
   { date: "2025-08-31", orderGroup: 46 },
   { date: "2025-09-30", orderGroup: 31 },
+  { date: "2025-10-31", orderGroup: 0 },
 ];
 
 const chartConfig = {
@@ -75,7 +65,7 @@ export function ChartAreaInteractive() {
 
   const filteredData = chartData.filter((item) => {
     const date = new Date(item.date);
-    const referenceDate = new Date("2024-06-30");
+    const referenceDate = new Date("2025-09-30");
     let daysToSubtract = 90;
     if (timeRange === "30d") {
       daysToSubtract = 30;
