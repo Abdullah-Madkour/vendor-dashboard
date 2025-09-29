@@ -22,7 +22,7 @@ export function SectionCards() {
           <CardAction>
             <Badge variant="outline">
               <IconTrendingUp />
-              +2%
+              +15%
             </Badge>
           </CardAction>
         </CardHeader>
@@ -44,17 +44,17 @@ export function SectionCards() {
             <Badge variant="outline">
               Subscribers
               <IconTrendingUp />
-              +3.7%
+              +200%
             </Badge>
             <Badge variant="outline">
               Pending
-              <IconTrendingUp />
-              +86.8%
+              <IconTrendingDown />
+              -30%
             </Badge>
             <Badge variant="outline">
-              Closed
-              <IconTrendingUp />
-              +9.5%
+              Refused
+              <IconTrendingDown />
+              -30%
             </Badge>
           </div>
         </CardFooter>
@@ -68,7 +68,7 @@ export function SectionCards() {
           <CardAction>
             <Badge variant="outline">
               <IconTrendingUp />
-              +12.5%
+              +25%
             </Badge>
           </CardAction>
         </CardHeader>
@@ -78,34 +78,34 @@ export function SectionCards() {
               Trending up this month <IconTrendingUp className="size-4" />
             </div>
             <div className="text-muted-foreground">
-              Vendors for the last 6 months
+              Buyers for the last 6 months
             </div>
           </div>
           <div className="flex flex-1 flex-wrap justify-end  items-center gap-2">
             <Badge variant="outline">
               Verified
               <IconTrendingUp />
-              +80%
+              +25%
             </Badge>
             <Badge variant="outline">
               Middle East & Africa
               <IconTrendingUp />
-              +91.04%
+              +30.7%
             </Badge>
             <Badge variant="outline">
               Europe
-              <IconTrendingUp />
-              +5.29%
+              <IconTrendingDown />
+              -42%
             </Badge>
             <Badge variant="outline">
               The Americas
               <IconTrendingUp />
-              +1.06%
+              +5%
             </Badge>
             <Badge variant="outline">
               Asia-Pacific
               <IconTrendingUp />
-              +2.65%
+              +50%
             </Badge>
           </div>
         </CardFooter>

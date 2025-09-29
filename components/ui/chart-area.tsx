@@ -66,15 +66,15 @@ export function ChartAreaInteractive() {
   const filteredData = chartData.filter((item) => {
     const date = new Date(item.date);
     const referenceDate = new Date("2025-09-30");
-    let daysToSubtract = 90;
-    if (timeRange === "30d") {
-      daysToSubtract = 30;
-    } else if (timeRange === "7d") {
-      daysToSubtract = 7;
-    }
-    const startDate = new Date(referenceDate);
-    startDate.setDate(startDate.getDate() - daysToSubtract);
-    return date >= startDate;
+    // let daysToSubtract = 90;
+    // if (timeRange === "30d") {
+    //   daysToSubtract = 30;
+    // } else if (timeRange === "7d") {
+    //   daysToSubtract = 7;
+    // }
+    // const startDate = new Date(referenceDate);
+    // startDate.setDate(startDate.getDate() - daysToSubtract);
+    return date;
   });
 
   return (
@@ -84,13 +84,13 @@ export function ChartAreaInteractive() {
           Total Group Orders
           <span className="text-5xl">204</span>
         </CardTitle>
-        <CardDescription>
+        {/* <CardDescription>
           <span className="hidden @[540px]/card:block">
             Total for the last 3 months
           </span>
           <span className="@[540px]/card:hidden">Last 3 months</span>
-        </CardDescription>
-        <CardAction>
+        </CardDescription> */}
+        {/* <CardAction>
           <ToggleGroup
             type="single"
             value={timeRange}
@@ -122,7 +122,7 @@ export function ChartAreaInteractive() {
               </SelectItem>
             </SelectContent>
           </Select>
-        </CardAction>
+        </CardAction> */}
       </CardHeader>
       <CardContent className="px-2 pt-4 sm:px-6 sm:pt-6">
         <ChartContainer
